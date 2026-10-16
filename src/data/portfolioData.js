@@ -4,7 +4,7 @@ export const portfolioData = {
     eyebrow: "MCA CANDIDATE • FULL-STACK DEVELOPER • SOFTWARE & IT ROLES",
     headline: "Building Scalable Web Systems & Solving Real-World Engineering Problems.",
     tagline: "MCA student at M. Kumarasamy College of Engineering (79%). Passionate about full-stack web applications, database architectures, and software engineering. Open for Software Engineer, Full-Stack Developer, and MCA Graduate / IT roles.",
-    availability: "Open for Software & IT Roles | Campus Placements & Internships",
+    availability: "Open for Software & IT Roles | Full-Time & Internships",
     location: "Karur, Tamil Nadu, India (IST • UTC+5:30)",
     phone: "+91 8124931018",
     whatsapp: "https://wa.me/918124931018?text=Hi%20Seshaan!%20I%20viewed%20your%20student%20portfolio%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.",
