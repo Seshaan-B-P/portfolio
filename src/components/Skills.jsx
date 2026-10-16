@@ -25,7 +25,7 @@ export default function Skills() {
           <div className="max-w-2xl">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              TECHNICAL SKILLS & STACK
+              TECHNICAL SKILLS
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
               Modern stack, <span className="text-[#b6ff00]">battle-tested.</span>

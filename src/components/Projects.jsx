@@ -21,7 +21,7 @@ export default function Projects() {
           <div className="max-w-2xl">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              03 — PROJECTS & CAPSTONES
+              FEATURED PROJECTS
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
               Real-world systems with <span className="text-[#b6ff00]">demonstrated impact.</span>
@@ -36,31 +36,28 @@ export default function Projects() {
             <div className="inline-flex items-center gap-1.5 p-1.5 rounded-2xl md:rounded-full bg-[#181818] border border-[#262626] shadow-md">
               <button
                 onClick={() => setFilter('all')}
-                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${
-                  filter === 'all'
+                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${filter === 'all'
                     ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
                     : 'text-slate-400 hover:text-white'
-                }`}
+                  }`}
               >
                 All Projects ({portfolioData.projects.length})
               </button>
               <button
                 onClick={() => setFilter('lead')}
-                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${
-                  filter === 'lead'
+                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${filter === 'lead'
                     ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
                     : 'text-slate-400 hover:text-white'
-                }`}
+                  }`}
               >
                 Team Lead Projects
               </button>
               <button
                 onClick={() => setFilter('fullstack')}
-                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${
-                  filter === 'fullstack'
+                className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap tracking-wider transition-all duration-200 ${filter === 'fullstack'
                     ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
                     : 'text-slate-400 hover:text-white'
-                }`}
+                  }`}
               >
                 Full-Stack Builds
               </button>

@@ -65,14 +65,14 @@ export default function Contact({ onShowToast, prefillData }) {
         <div className="max-w-2xl mb-12">
           <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
             <Sparkles size={14} />
-            06 — CONTACT & CONNECT
+            CONTACT & CONNECT
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
             Let’s connect to build <br />
             <span className="text-gradient-lime">impactful software together.</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
-            Open for full-time Software Development Engineer (SDE) roles, Full-Stack engineering positions, and technical internships. Reach out directly or send a message below.
+            Whether you have an internship or full-time opportunity, a technical question, or want to collaborate on a project — my inbox is always open.
           </p>
         </div>
 
@@ -89,10 +89,10 @@ export default function Contact({ onShowToast, prefillData }) {
                 className="flex items-center justify-between"
               >
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block">
-                  Direct Inquiries
+                  Get In Touch
                 </span>
                 <span className="text-[11px] font-bold text-[#b6ff00] bg-[#b6ff00]/10 px-2.5 py-0.5 rounded-full border border-[#b6ff00]/30">
-                  Quick Reply
+                  Open to Opportunities
                 </span>
               </div>
 
@@ -156,17 +156,17 @@ export default function Contact({ onShowToast, prefillData }) {
                 </div>
               </div>
 
-              {/* Working Hours & Timezone */}
+              {/* Working Hours & Availability */}
               <div
                 style={{ transform: 'translateZ(15px)' }}
                 className="p-4 rounded-2xl bg-[#131313]/70 border border-[#262626] text-xs text-slate-400 space-y-1"
               >
                 <div className="flex items-center gap-2 font-semibold text-slate-200">
                   <Clock size={14} className="text-[#b6ff00]" />
-                  <span>Availability & Interview Schedule:</span>
+                  <span>Academic Status & Availability:</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
-                  Available for technical interviews and discussions. Flexible overlap for recruiters and engineering teams across all timezones.
+                  MCA Student at MKCE (79%). Actively open for full-time Software Engineer (SDE) roles, campus placements, and internships.
                 </p>
               </div>
 
@@ -175,7 +175,7 @@ export default function Contact({ onShowToast, prefillData }) {
                 style={{ transform: 'translateZ(20px)' }}
                 className="pt-2 flex items-center justify-between border-t border-[#262626] text-xs text-slate-400 font-semibold"
               >
-                <span>Professional Links:</span>
+                <span>Professional Profiles:</span>
                 <div className="flex items-center gap-2">
                   <a
                     href={portfolioData.personal.linkedin}
@@ -203,9 +203,9 @@ export default function Contact({ onShowToast, prefillData }) {
           {/* Right Column: Inquiry / Contact Form */}
           <div className="lg:col-span-7">
             <div className="p-8 sm:p-10 rounded-3xl bg-[#181818] border border-[#262626] shadow-card-soft">
-              <h3 className="text-2xl font-bold text-white mb-1">Send a Message or Opportunity</h3>
+              <h3 className="text-2xl font-bold text-white mb-1">Send a Message</h3>
               <p className="text-xs text-slate-400 mb-6">
-                Looking to discuss an open role, technical project, or schedule an interview? Send your note below.
+                Have an opportunity, project question, or just want to connect? Send a note below.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -213,12 +213,12 @@ export default function Contact({ onShowToast, prefillData }) {
                   {/* Name */}
                   <div>
                     <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                      Your Name / Organization *
+                      Your Name *
                     </label>
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Recruiter / Engineering Lead"
+                      placeholder="e.g. Alex Smith"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
@@ -233,7 +233,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     <input
                       type="email"
                       required
-                      placeholder="e.g. team@company.com"
+                      placeholder="e.g. alex@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
@@ -242,22 +242,20 @@ export default function Contact({ onShowToast, prefillData }) {
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {/* Service / Inquiring Domain */}
+                  {/* Topic / Purpose */}
                   <div>
                     <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                      Inquiring Domain / Role
+                      Purpose of Message
                     </label>
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     >
-                      <option value="Full-Time Software Engineer / SDE Role" className="bg-[#181818] text-white">Full-Time Software Engineer / SDE Role</option>
-                      <option value="Full-Stack Developer Position (MERN)" className="bg-[#181818] text-white">Full-Stack Developer Position (MERN)</option>
-                      <option value="Frontend / Backend Engineer Position" className="bg-[#181818] text-white">Frontend / Backend Engineer Position</option>
+                      <option value="Full-Time Software Engineer / SDE Role" className="bg-[#181818] text-white">Full-Time SDE / Software Role</option>
                       <option value="Software Engineering Internship" className="bg-[#181818] text-white">Software Engineering Internship</option>
-                      <option value="Technical Project / Hackathon Collaboration" className="bg-[#181818] text-white">Technical Project / Hackathon Collaboration</option>
-                      <option value="General Technical Inquiry" className="bg-[#181818] text-white">General Technical Inquiry</option>
+                      <option value="Project / Hackathon Collaboration" className="bg-[#181818] text-white">Project / Hackathon Collaboration</option>
+                      <option value="General Connect / Networking" className="bg-[#181818] text-white">General Connect / Networking</option>
                     </select>
                   </div>
 
@@ -268,7 +266,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. SDE Opportunity / Interview Discussion"
+                      placeholder="e.g. SDE Opportunity / Connect"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
@@ -279,12 +277,12 @@ export default function Contact({ onShowToast, prefillData }) {
                 {/* Message */}
                 <div>
                   <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-                    Message / Opportunity Details *
+                    Your Message *
                   </label>
                   <textarea
                     rows={4}
                     required
-                    placeholder="Tell me a bit about the role, tech stack, company, or any specific questions..."
+                    placeholder="Hi Seshaan, I'd like to talk about..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all resize-none"
@@ -303,7 +301,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     className="w-full py-4 px-6 rounded-full text-xs font-black uppercase tracking-wider text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] shadow-glow-lime hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send size={15} />
-                    <span>Send Message / Connect</span>
+                    <span>Send Message</span>
                   </button>
                 </div>
               </form>
