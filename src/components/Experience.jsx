@@ -13,7 +13,7 @@ export default function Experience() {
             <div>
               <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
                 <Sparkles size={14} />
-                06 — EXPERIENCE & TRACK RECORD
+                04 — INTERNSHIPS & EXPERIENCE
               </span>
               <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
                 Real-world <span className="text-[#b6ff00]">industry execution.</span>

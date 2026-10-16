@@ -25,7 +25,7 @@ export default function Skills() {
           <div className="max-w-2xl">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              05 — TECH ARSENAL
+              TECHNICAL SKILLS & STACK
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
               Modern stack, <span className="text-[#b6ff00]">battle-tested.</span>
@@ -42,11 +42,10 @@ export default function Skills() {
                 <button
                   key={btn.id}
                   onClick={() => setActiveFilter(btn.id)}
-                  className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${
-                    activeFilter === btn.id
+                  className={`px-4 py-2 rounded-xl md:rounded-full text-xs font-semibold whitespace-nowrap transition-all duration-200 ${activeFilter === btn.id
                       ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
                       : 'text-slate-400 hover:text-white'
-                  }`}
+                    }`}
                 >
                   {btn.label}
                 </button>

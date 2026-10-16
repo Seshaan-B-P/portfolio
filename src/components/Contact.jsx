@@ -65,7 +65,7 @@ export default function Contact({ onShowToast, prefillData }) {
         <div className="max-w-2xl mb-12">
           <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
             <Sparkles size={14} />
-            10 — GET IN TOUCH / RECRUITMENT & CONNECT
+            06 — CONTACT & CONNECT
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
             Let’s connect to build <br />

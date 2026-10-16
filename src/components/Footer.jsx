@@ -21,10 +21,10 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-400">
-            <a href="#services" className="hover:text-[#b6ff00] transition-colors">Expertise</a>
-            <a href="#projects" className="hover:text-[#b6ff00] transition-colors">Projects</a>
-            <a href="#process" className="hover:text-[#b6ff00] transition-colors">Workflow</a>
+            <a href="#about" className="hover:text-[#b6ff00] transition-colors">About</a>
             <a href="#skills" className="hover:text-[#b6ff00] transition-colors">Skills</a>
+            <a href="#projects" className="hover:text-[#b6ff00] transition-colors">Projects</a>
+            <a href="#experience" className="hover:text-[#b6ff00] transition-colors">Experience</a>
             <a href="#education" className="hover:text-[#b6ff00] transition-colors">Education</a>
             <a href="#contact" className="hover:text-[#b6ff00] transition-colors">Contact</a>
           </div>

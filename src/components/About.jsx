@@ -19,7 +19,7 @@ export default function About() {
           <div className="lg:col-span-5 space-y-5">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              04 — CANDIDATE PROFILE & PRINCIPLES
+              ABOUT ME & ACADEMIC PROFILE
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Engineering with rigor.

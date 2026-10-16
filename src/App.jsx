@@ -3,38 +3,23 @@ import ThreeBackground from './components/ThreeBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MarqueeTicker from './components/MarqueeTicker';
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Process from './components/Process';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
   const [toast, setToast] = useState('');
   const [mousePos, setMousePos] = useState({ x: -100, y: -100 });
-  const [prefillContact, setPrefillContact] = useState(null);
 
   const showToast = (msg) => {
     setToast(msg);
     setTimeout(() => {
       setToast('');
     }, 2800);
-  };
-
-  const handleSelectService = (serviceName) => {
-    setPrefillContact({
-      subject: `Inquiry regarding: ${serviceName}`,
-      message: `Hi Seshaan, I'm interested in discussing a project for: ${serviceName}. Here are some initial details...`,
-    });
-    const contactEl = document.getElementById('contact');
-    if (contactEl) {
-      contactEl.scrollIntoView({ behavior: 'smooth' });
-    }
   };
 
   useEffect(() => {
@@ -63,19 +48,16 @@ export default function App() {
       {/* 3. Sticky Frosted Glass Navigation */}
       <Navbar />
 
-      {/* 4. Main Student Portfolio Content */}
+      {/* 4. Main Student Portfolio Content (Only essential sections) */}
       <main className="relative z-10">
         <Hero />
         <MarqueeTicker />
-        <Services onSelectService={handleSelectService} />
-        <Projects />
-        <Process />
         <About />
         <Skills />
+        <Projects />
         <Experience />
         <Education />
-        <Testimonials />
-        <Contact onShowToast={showToast} prefillData={prefillContact} />
+        <Contact onShowToast={showToast} />
       </main>
 
       {/* 5. Footer */}
