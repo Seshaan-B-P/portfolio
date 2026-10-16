@@ -32,7 +32,7 @@ export default function Services({ onSelectService }) {
 
           <div className="flex items-center gap-2 self-start md:self-auto text-xs font-semibold text-slate-300 bg-[#181818] px-4 py-2 rounded-full border border-[#2a2a2a] shadow-md">
             <span className="w-2 h-2 rounded-full bg-[#b6ff00]"></span>
-            <span>Open for Full-Time SDE & Intern Roles</span>
+            <span>Open for Software, Web & IT Roles</span>
           </div>
         </div>
 

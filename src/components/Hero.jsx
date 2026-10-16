@@ -31,7 +31,7 @@ export default function Hero() {
 
           {/* Subtext */}
           <p className="text-base sm:text-lg text-slate-400 max-w-xl font-normal leading-relaxed">
-            I’m <span className="text-white font-bold">{portfolioData.personal.name}</span> — MCA candidate at M. Kumarasamy College of Engineering (79%). Passionate Full-Stack Engineer specializing in MERN architectures, robust backend APIs, and modern interactive web systems. Actively seeking SDE and Software Engineer opportunities.
+            I’m <span className="text-white font-bold">{portfolioData.personal.name}</span> — MCA candidate at M. Kumarasamy College of Engineering (79%). Strong foundation in full-stack web development, database architecture, and computer applications. Open for Software Engineering, Web Development, and MCA Graduate / IT roles.
           </p>
 
           {/* 3D Value Pills */}
@@ -47,7 +47,7 @@ export default function Hero() {
               <div className="p-1.5 rounded-lg bg-[#222222] text-[#b6ff00] group-hover:scale-110 transition-transform">
                 <ShieldCheck size={14} />
               </div>
-              <span>Production MERN Stack</span>
+              <span>Full-Stack & IT Core</span>
             </div>
 
             <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-[#181818] border border-[#262626] shadow-card-soft text-xs font-semibold text-slate-200 hover:border-[#b6ff00]/50 hover:shadow-card-hover transition-all group">

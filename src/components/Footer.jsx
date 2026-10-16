@@ -16,7 +16,7 @@ export default function Footer() {
               SB<span className="text-[#b6ff00]">.</span>
             </span>
             <p className="text-xs text-slate-400 mt-1 max-w-sm">
-              MCA Student & Aspiring Software Development Engineer (SDE) specializing in MERN Stack, production web systems, and modern responsive user interfaces.
+              MCA Candidate & Full-Stack Developer specializing in MERN Stack, database systems, web applications, and modern IT solutions.
             </p>
           </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
             © 2026 <strong className="text-slate-300 font-semibold">{portfolioData.personal.name}</strong>. All rights reserved.
           </div>
           <div className="flex items-center gap-2 text-slate-500">
-            <span>MCA Student Portfolio • MERN Stack Architecture • Open to SDE Roles</span>
+            <span>MCA Candidate Portfolio • MERN Stack & Databases • Open for Software & IT Roles</span>
           </div>
         </div>
       </div>

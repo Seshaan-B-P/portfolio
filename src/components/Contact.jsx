@@ -9,7 +9,7 @@ export default function Contact({ onShowToast, prefillData }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    service: 'Full-Stack Web App (MERN)',
+    service: 'Full-Time Software Engineer / Developer Role',
     subject: '',
     message: '',
   });
@@ -72,7 +72,7 @@ export default function Contact({ onShowToast, prefillData }) {
             <span className="text-gradient-lime">impactful software together.</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
-            Whether you have an internship or full-time opportunity, a technical question, or want to collaborate on a project — my inbox is always open.
+            Whether you have a software development role, full-stack opening, IT associate opportunity, or internship — my inbox is always open.
           </p>
         </div>
 
@@ -166,7 +166,7 @@ export default function Contact({ onShowToast, prefillData }) {
                   <span>Academic Status & Availability:</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
-                  MCA Student at MKCE (79%). Actively open for full-time Software Engineer (SDE) roles, campus placements, and internships.
+                  MCA Student at MKCE (79%). Actively open for Software Engineering, Full-Stack, Web Development, and MCA Graduate / IT roles.
                 </p>
               </div>
 
@@ -252,9 +252,11 @@ export default function Contact({ onShowToast, prefillData }) {
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     >
-                      <option value="Full-Time Software Engineer / SDE Role" className="bg-[#181818] text-white">Full-Time SDE / Software Role</option>
-                      <option value="Software Engineering Internship" className="bg-[#181818] text-white">Software Engineering Internship</option>
-                      <option value="Project / Hackathon Collaboration" className="bg-[#181818] text-white">Project / Hackathon Collaboration</option>
+                      <option value="Full-Time Software Engineer / Developer Role" className="bg-[#181818] text-white">Full-Time Software Engineer / Developer</option>
+                      <option value="Full-Stack / Web Development Role" className="bg-[#181818] text-white">Full-Stack / Web Development Role</option>
+                      <option value="IT Associate / Graduate Trainee Role" className="bg-[#181818] text-white">IT Associate / Graduate Trainee Role</option>
+                      <option value="Technical Internship (Software / Web / IT)" className="bg-[#181818] text-white">Technical Internship (Software / Web / IT)</option>
+                      <option value="Project / Technical Collaboration" className="bg-[#181818] text-white">Project / Technical Collaboration</option>
                       <option value="General Connect / Networking" className="bg-[#181818] text-white">General Connect / Networking</option>
                     </select>
                   </div>
@@ -266,7 +268,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     </label>
                     <input
                       type="text"
-                      placeholder="e.g. SDE Opportunity / Connect"
+                      placeholder="e.g. Software / IT Opportunity or Connect"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                       className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"

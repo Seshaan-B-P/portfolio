@@ -65,7 +65,7 @@ export default function Navbar() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#b6ff00] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#b6ff00]"></span>
             </span>
-            <span>Open to SDE Roles</span>
+            <span>Open to Software & IT Roles</span>
           </a>
         </div>
 
@@ -124,7 +124,7 @@ export default function Navbar() {
         <div className="lg:hidden bg-[#141414]/98 backdrop-blur-2xl border-b border-[#252525] px-6 py-6 space-y-3.5 shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="flex items-center gap-2 pb-2 text-xs font-bold text-[#b6ff00]">
             <span className="w-2 h-2 rounded-full bg-[#b6ff00] animate-pulse"></span>
-            Open for SDE Roles & Internships
+            Open for Software, Web & IT Roles
           </div>
           {navLinks.map((link) => (
             <a

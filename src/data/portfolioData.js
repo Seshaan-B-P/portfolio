@@ -1,10 +1,10 @@
 export const portfolioData = {
   personal: {
     name: "Seshaan B P",
-    eyebrow: "MCA CANDIDATE • FULL-STACK MERN DEVELOPER • ASPIRING SDE",
-    headline: "Building Scalable Full-Stack Systems & Solving Real-World Engineering Problems.",
-    tagline: "MCA student at M. Kumarasamy College of Engineering (79%). Passionate about MERN stack architectures, robust backend APIs, and scalable digital solutions. Actively seeking SDE, Software Engineer & Full-Stack roles.",
-    availability: "Open for SDE Roles & Engineering Internships",
+    eyebrow: "MCA CANDIDATE • FULL-STACK DEVELOPER • SOFTWARE & IT ROLES",
+    headline: "Building Scalable Web Systems & Solving Real-World Engineering Problems.",
+    tagline: "MCA student at M. Kumarasamy College of Engineering (79%). Passionate about full-stack web applications, database architectures, and software engineering. Open for Software Engineer, Full-Stack Developer, and MCA Graduate / IT roles.",
+    availability: "Open for Software & IT Roles | Campus Placements & Internships",
     location: "Karur, Tamil Nadu, India (IST • UTC+5:30)",
     phone: "+91 8124931018",
     whatsapp: "https://wa.me/918124931018?text=Hi%20Seshaan!%20I%20viewed%20your%20student%20portfolio%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.",
@@ -14,9 +14,9 @@ export const portfolioData = {
     resumeUrl: "/Seshaan_B_P_Resume.pdf",
     heroImage: "/hero-image.jpg",
     avatarImage: "/profile.jpg",
-    roleTarget: "Software Development Engineer (SDE) / Full-Stack Engineer",
+    roleTarget: "Software Engineer / Full-Stack Developer / IT Associate",
     summary:
-      "MCA candidate and Full-Stack Software Engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in leading development teams, architecting production-grade web systems like custom CRMs with automated document generation and dental clinic EHR platforms. Genesis'26 Hackathon Winner and competitive programmer aiming to create high-impact software."
+      "MCA candidate and Full-Stack Developer specializing in modern software technologies (MongoDB, Express.js, React.js, Node.js, SQL, Java, Python). Experienced in leading development teams, building production web platforms like custom CRMs and clinic EHR platforms, with hands-on internship experience in web development and IT technical support. Eager to contribute across Software Engineering, Web Development, and IT technology domains."
   },
 
   studentTrustMetrics: [
@@ -329,7 +329,7 @@ export const portfolioData = {
   faqs: [
     {
       question: "What types of roles and opportunities are you currently seeking?",
-      answer: "I am actively seeking full-time Software Development Engineer (SDE), Full-Stack Developer, Frontend/Backend Engineer roles, and Software Engineering internships starting immediately or upon graduation."
+      answer: "I am actively open for full-time Software Engineer, Full-Stack Developer, Web Developer, Frontend/Backend Engineer, IT Associate, and Graduate Trainee roles, as well as technical internships starting immediately or upon graduation."
     },
     {
       question: "What is your academic status and graduation timeline?",

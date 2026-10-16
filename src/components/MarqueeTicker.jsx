@@ -8,7 +8,7 @@ export default function MarqueeTicker() {
     { label: 'Full-Stack MERN Architecture', icon: <Layers size={14} className="text-[#b6ff00]" /> },
     { label: 'TCS CodeVita Global Rank 15.5k', icon: <Trophy size={14} className="text-[#b6ff00]" /> },
     { label: 'Production Web Systems (EEGA CRM & SmileCare)', icon: <ShieldCheck size={14} className="text-[#b6ff00]" /> },
-    { label: 'Open for SDE Roles & Internships', icon: <Zap size={14} className="text-[#b6ff00]" /> },
+    { label: 'Open for Software, Web & IT Roles', icon: <Zap size={14} className="text-[#b6ff00]" /> },
     { label: 'React.js, Node.js, Express & MongoDB', icon: <CheckCircle2 size={14} className="text-[#b6ff00]" /> },
     { label: 'Clean Code & Algorithmic Problem Solving', icon: <Sparkles size={14} className="text-[#b6ff00]" /> },
   ];
