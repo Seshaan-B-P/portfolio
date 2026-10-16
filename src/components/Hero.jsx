@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageSquare, CheckCircle2, ShieldCheck, Sparkles, MapPin, Zap, Star } from 'lucide-react';
+import { ArrowRight, MessageSquare, CheckCircle2, ShieldCheck, MapPin, Zap } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from './SocialIcons';
 import Tilt3DCard from './Tilt3DCard';
 import { portfolioData } from '../data/portfolioData';
@@ -121,88 +121,21 @@ export default function Hero() {
         {/* Right Column: 3D Holographic Studio Profile Card */}
         <div className="lg:col-span-5 flex justify-center">
           <Tilt3DCard
-            maxTilt={14}
-            className="w-full max-w-[440px] rounded-3xl p-6 bg-white/95 border border-slate-200 shadow-xl shadow-slate-200/70 backdrop-blur-2xl"
+            maxTilt={12}
+            className="w-full max-w-[460px] rounded-3xl p-3 sm:p-3.5 bg-white/95 border border-slate-200 shadow-xl shadow-slate-200/70 backdrop-blur-2xl overflow-hidden group"
           >
-            {/* Top Bar popped in 3D */}
-            <div
-              style={{ transform: 'translateZ(25px)' }}
-              className="flex items-center justify-between text-xs font-semibold text-slate-500 pb-3 border-b border-slate-100"
-            >
-              <span className="flex items-center gap-1.5 text-brand-indigo font-bold">
-                <Sparkles size={14} />
-                FULL-STACK FREELANCER
-              </span>
-              <span className="text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 font-bold text-[11px]">
-                Accepting Projects
-              </span>
-            </div>
-
-            {/* Profile Picture with 3D Pop and Verified Shield */}
-            <div
-              style={{ transform: 'translateZ(35px)' }}
-              className="relative my-5 flex justify-center"
-            >
-              <div className="relative group">
-                <div className="w-44 h-44 rounded-3xl overflow-hidden border-2 border-indigo-100 shadow-md p-1 bg-white">
-                  <img
-                    src={portfolioData.personal.avatarImage}
-                    alt={portfolioData.personal.name}
-                    className="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      e.target.src = portfolioData.personal.heroImage;
-                    }}
-                  />
-                </div>
-                <div className="absolute -bottom-2 -right-2 px-3 py-1 rounded-full bg-slate-900 text-white text-[11px] font-bold flex items-center gap-1.5 shadow-md">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
-                  Verified Engineer
-                </div>
-              </div>
-            </div>
-
-            {/* Name & Core Specialization */}
             <div
               style={{ transform: 'translateZ(30px)' }}
-              className="text-center space-y-1.5"
+              className="relative w-full overflow-hidden rounded-2xl bg-slate-100 shadow-sm"
             >
-              <h3 className="text-2xl font-black text-slate-900 tracking-tight">
-                {portfolioData.personal.name}
-              </h3>
-              <p className="text-xs font-medium text-slate-500">
-                MERN Specialist • Team Lead • Hackathon Winner
-              </p>
-
-              {/* Technologies Pills */}
-              <div className="flex flex-wrap justify-center gap-1.5 pt-2">
-                {['React.js', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS', 'REST APIs'].map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-slate-50 text-slate-700 border border-slate-200/80 hover:border-indigo-300 hover:text-brand-indigo transition-colors"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* 3D Mini Metrics Strip */}
-            <div
-              style={{ transform: 'translateZ(25px)' }}
-              className="grid grid-cols-3 gap-2.5 pt-5 mt-5 border-t border-slate-100 text-center"
-            >
-              <div className="p-2.5 rounded-2xl bg-slate-50 border border-slate-100">
-                <div className="text-lg font-black text-brand-indigo">03+</div>
-                <div className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Web Apps</div>
-              </div>
-              <div className="p-2.5 rounded-2xl bg-slate-50 border border-slate-100">
-                <div className="text-lg font-black text-emerald-600">1st</div>
-                <div className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">Hackathon</div>
-              </div>
-              <div className="p-2.5 rounded-2xl bg-slate-50 border border-slate-100">
-                <div className="text-lg font-black text-cyan-600">100%</div>
-                <div className="text-[10px] text-slate-500 uppercase font-bold tracking-wider">On-Time</div>
-              </div>
+              <img
+                src={portfolioData.personal.heroImage}
+                alt={portfolioData.personal.name}
+                className="w-full h-auto object-cover rounded-2xl group-hover:scale-[1.02] transition-transform duration-500 ease-out"
+                onError={(e) => {
+                  e.target.src = portfolioData.personal.avatarImage;
+                }}
+              />
             </div>
           </Tilt3DCard>
         </div>
