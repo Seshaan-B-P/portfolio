@@ -60,18 +60,18 @@ export default function Contact({ onShowToast, prefillData }) {
   };
 
   return (
-    <section id="contact" className="py-24 border-t border-slate-200/80 relative bg-slate-50/60">
+    <section id="contact" className="py-24 border-t border-[#222222] relative bg-[#111111]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="max-w-2xl mb-12">
-          <span className="text-xs font-bold text-brand-indigo uppercase tracking-widest flex items-center gap-1.5">
+          <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
             <Sparkles size={14} />
             09 — START A PROJECT
           </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mt-2">
+          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
             Let’s turn your idea <br />
-            into a <span className="text-gradient-indigo">market-ready product.</span>
+            into a <span className="text-gradient-lime">market-ready product.</span>
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2 font-normal">
+          <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
             Available for new freelance projects, contract roles, and software engineering consulting. Let's discuss your timeline and deliverables.
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function Contact({ onShowToast, prefillData }) {
             {/* Primary Email Card with 1-Click Copy */}
             <Tilt3DCard
               maxTilt={12}
-              className="p-8 rounded-3xl bg-white border border-slate-200/90 space-y-5 shadow-card-soft hover:shadow-card-hover transition-all duration-300"
+              className="p-8 rounded-3xl bg-[#181818] border border-[#262626] space-y-5 shadow-card-soft hover:border-[#b6ff00]/40 transition-all duration-300"
             >
               <div
                 style={{ transform: 'translateZ(25px)' }}
@@ -91,7 +91,7 @@ export default function Contact({ onShowToast, prefillData }) {
                 <span className="text-xs font-bold text-slate-400 uppercase tracking-widest block">
                   Direct Inquiries
                 </span>
-                <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                <span className="text-[11px] font-bold text-[#b6ff00] bg-[#b6ff00]/10 px-2.5 py-0.5 rounded-full border border-[#b6ff00]/30">
                   Quick Reply
                 </span>
               </div>
@@ -99,13 +99,13 @@ export default function Contact({ onShowToast, prefillData }) {
               {/* Email Address with Copy Trigger */}
               <div
                 style={{ transform: 'translateZ(30px)' }}
-                className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border border-slate-200/80"
+                className="flex items-center justify-between p-4 rounded-2xl bg-[#131313] border border-[#262626]"
               >
                 <div className="flex items-center gap-3 truncate">
-                  <Mail className="text-brand-indigo flex-shrink-0" size={20} />
+                  <Mail className="text-[#b6ff00] flex-shrink-0" size={20} />
                   <a
                     href={`mailto:${portfolioData.personal.email}`}
-                    className="text-sm font-semibold text-slate-800 hover:text-brand-indigo transition-colors truncate"
+                    className="text-sm font-semibold text-white hover:text-[#b6ff00] transition-colors truncate"
                   >
                     {portfolioData.personal.email}
                   </a>
@@ -113,7 +113,7 @@ export default function Contact({ onShowToast, prefillData }) {
                 <button
                   type="button"
                   onClick={handleCopyEmail}
-                  className="px-3.5 py-1.5 rounded-xl bg-indigo-50 hover:bg-brand-indigo text-brand-indigo hover:text-white border border-indigo-200 text-xs font-bold flex items-center gap-1.5 transition-all ml-2 flex-shrink-0"
+                  className="px-3.5 py-1.5 rounded-xl bg-[#222222] hover:bg-[#b6ff00] text-[#b6ff00] hover:text-[#111111] border border-[#333333] hover:border-[#b6ff00] text-xs font-bold flex items-center gap-1.5 transition-all ml-2 flex-shrink-0"
                   title="Copy Email"
                 >
                   {copied ? <Check size={14} /> : <Copy size={14} />}
@@ -127,13 +127,13 @@ export default function Contact({ onShowToast, prefillData }) {
                   href={portfolioData.personal.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-4 px-5 rounded-2xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 flex items-center justify-between text-emerald-900 transition-all text-xs font-bold group shadow-2xs"
+                  className="w-full py-4 px-5 rounded-2xl bg-[#131313] hover:bg-[#1f1f1f] border border-[#262626] hover:border-[#b6ff00]/50 flex items-center justify-between text-white transition-all text-xs font-bold group shadow-2xs"
                 >
                   <div className="flex items-center gap-2.5">
-                    <MessageSquare size={18} className="text-emerald-600" />
+                    <MessageSquare size={18} className="text-[#b6ff00]" />
                     <span>Chat on WhatsApp Directly</span>
                   </div>
-                  <ArrowUpRight size={16} className="group-hover:translate-x-0.5 transition-transform" />
+                  <ArrowUpRight size={16} className="text-slate-400 group-hover:text-[#b6ff00] group-hover:translate-x-0.5 transition-transform" />
                 </a>
               </div>
 
@@ -144,14 +144,14 @@ export default function Contact({ onShowToast, prefillData }) {
               >
                 <a
                   href={`tel:${portfolioData.personal.phone.replace(/\s+/g, '')}`}
-                  className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center gap-2.5 text-slate-700 hover:text-brand-indigo hover:border-indigo-200 transition-all text-xs font-semibold"
+                  className="p-3.5 rounded-2xl bg-[#131313] border border-[#262626] flex items-center gap-2.5 text-slate-300 hover:text-[#b6ff00] hover:border-[#b6ff00]/40 transition-all text-xs font-semibold"
                 >
-                  <Phone size={16} className="text-emerald-600 flex-shrink-0" />
+                  <Phone size={16} className="text-[#b6ff00] flex-shrink-0" />
                   <span>{portfolioData.personal.phone}</span>
                 </a>
 
-                <div className="p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-center gap-2 text-slate-600 text-xs font-medium">
-                  <MapPin size={16} className="text-brand-indigo flex-shrink-0" />
+                <div className="p-3.5 rounded-2xl bg-[#131313] border border-[#262626] flex items-center gap-2 text-slate-300 text-xs font-medium">
+                  <MapPin size={16} className="text-[#b6ff00] flex-shrink-0" />
                   <span>Karur, India (IST)</span>
                 </div>
               </div>
@@ -159,10 +159,10 @@ export default function Contact({ onShowToast, prefillData }) {
               {/* Working Hours & Timezone */}
               <div
                 style={{ transform: 'translateZ(15px)' }}
-                className="p-4 rounded-2xl bg-slate-50/70 border border-slate-200/60 text-xs text-slate-600 space-y-1"
+                className="p-4 rounded-2xl bg-[#131313]/70 border border-[#262626] text-xs text-slate-400 space-y-1"
               >
-                <div className="flex items-center gap-2 font-semibold text-slate-800">
-                  <Clock size={14} className="text-brand-indigo" />
+                <div className="flex items-center gap-2 font-semibold text-slate-200">
+                  <Clock size={14} className="text-[#b6ff00]" />
                   <span>Timezone & Availability:</span>
                 </div>
                 <p className="text-[11px] leading-relaxed">
@@ -173,7 +173,7 @@ export default function Contact({ onShowToast, prefillData }) {
               {/* Social Channels */}
               <div
                 style={{ transform: 'translateZ(20px)' }}
-                className="pt-2 flex items-center justify-between border-t border-slate-100 text-xs text-slate-500 font-semibold"
+                className="pt-2 flex items-center justify-between border-t border-[#262626] text-xs text-slate-400 font-semibold"
               >
                 <span>Social Profiles:</span>
                 <div className="flex items-center gap-2">
@@ -181,7 +181,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     href={portfolioData.personal.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-50 hover:bg-indigo-50 border border-slate-200 text-slate-600 hover:text-brand-indigo transition-all"
+                    className="p-2.5 rounded-xl bg-[#131313] hover:bg-[#b6ff00] border border-[#262626] text-slate-300 hover:text-[#111111] transition-all"
                   >
                     <LinkedinIcon size={15} />
                   </a>
@@ -189,7 +189,7 @@ export default function Contact({ onShowToast, prefillData }) {
                     href={portfolioData.personal.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2.5 rounded-xl bg-slate-50 hover:bg-slate-200 border border-slate-200 text-slate-600 hover:text-slate-900 transition-all"
+                    className="p-2.5 rounded-xl bg-[#131313] hover:bg-[#b6ff00] border border-[#262626] text-slate-300 hover:text-[#111111] transition-all"
                   >
                     <GithubIcon size={15} />
                   </a>
@@ -200,9 +200,9 @@ export default function Contact({ onShowToast, prefillData }) {
 
           {/* Right Column: Project Inquiry Form */}
           <div className="lg:col-span-7">
-            <div className="p-8 sm:p-10 rounded-3xl bg-white border border-slate-200 shadow-card-soft">
-              <h3 className="text-2xl font-bold text-slate-900 mb-1">Send a Project Brief</h3>
-              <p className="text-xs text-slate-500 mb-6">
+            <div className="p-8 sm:p-10 rounded-3xl bg-[#181818] border border-[#262626] shadow-card-soft">
+              <h3 className="text-2xl font-bold text-white mb-1">Send a Project Brief</h3>
+              <p className="text-xs text-slate-400 mb-6">
                 Fill in your project goals below. I’ll review your requirements and reply promptly.
               </p>
 
@@ -210,7 +210,7 @@ export default function Contact({ onShowToast, prefillData }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Name */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                       Your Name *
                     </label>
                     <input
@@ -219,13 +219,13 @@ export default function Contact({ onShowToast, prefillData }) {
                       placeholder="e.g. John Doe / Founder"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-brand-indigo focus:bg-white transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                       Your Email *
                     </label>
                     <input
@@ -234,7 +234,7 @@ export default function Contact({ onShowToast, prefillData }) {
                       placeholder="e.g. john@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-brand-indigo focus:bg-white transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     />
                   </div>
                 </div>
@@ -242,26 +242,26 @@ export default function Contact({ onShowToast, prefillData }) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {/* Service */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                       Service Required
                     </label>
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-brand-indigo focus:bg-white transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     >
-                      <option value="Full-Stack Web App (MERN)">Full-Stack Web App (MERN)</option>
-                      <option value="Custom CRM & Internal Portal">Custom CRM & Internal Portal</option>
-                      <option value="Clinic & Healthcare EHR">Clinic & Healthcare EHR</option>
-                      <option value="Business Website / Landing Page">Business Website / Landing Page</option>
-                      <option value="REST API & Database Architecture">REST API & Database Architecture</option>
-                      <option value="Code Review / Other Consultation">Other Technical Project</option>
+                      <option value="Full-Stack Web App (MERN)" className="bg-[#181818] text-white">Full-Stack Web App (MERN)</option>
+                      <option value="Custom CRM & Internal Portal" className="bg-[#181818] text-white">Custom CRM & Internal Portal</option>
+                      <option value="Clinic & Healthcare EHR" className="bg-[#181818] text-white">Clinic & Healthcare EHR</option>
+                      <option value="Business Website / Landing Page" className="bg-[#181818] text-white">Business Website / Landing Page</option>
+                      <option value="REST API & Database Architecture" className="bg-[#181818] text-white">REST API & Database Architecture</option>
+                      <option value="Code Review / Other Consultation" className="bg-[#181818] text-white">Other Technical Project</option>
                     </select>
                   </div>
 
                   {/* Subject */}
                   <div>
-                    <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                    <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                       Project Subject
                     </label>
                     <input
@@ -269,14 +269,14 @@ export default function Contact({ onShowToast, prefillData }) {
                       placeholder="e.g. New MERN Dashboard MVP for Logistics"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-brand-indigo focus:bg-white transition-all"
+                      className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all"
                     />
                   </div>
                 </div>
 
                 {/* Message */}
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+                  <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
                     Project Overview & Goals *
                   </label>
                   <textarea
@@ -285,12 +285,12 @@ export default function Contact({ onShowToast, prefillData }) {
                     placeholder="Tell me a bit about what you want to build, any key features, and your target launch date..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm focus:outline-none focus:border-brand-indigo focus:bg-white transition-all resize-none"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#131313] border border-[#2f2f2f] text-white placeholder:text-slate-500 text-sm focus:outline-none focus:border-[#b6ff00] focus:ring-1 focus:ring-[#b6ff00] transition-all resize-none"
                   />
                 </div>
 
                 {status && (
-                  <div className="p-3.5 rounded-2xl bg-indigo-50 border border-indigo-200 text-xs font-semibold text-brand-indigo">
+                  <div className="p-3.5 rounded-2xl bg-[#131313] border border-[#b6ff00]/40 text-xs font-semibold text-[#b6ff00]">
                     {status}
                   </div>
                 )}
@@ -298,7 +298,7 @@ export default function Contact({ onShowToast, prefillData }) {
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full py-4 px-6 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-brand-indigo hover:bg-brand-indigo-dark shadow-md shadow-brand-indigo/30 hover:shadow-glow-indigo transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] shimmer-hover"
+                    className="w-full py-4 px-6 rounded-full text-xs font-black uppercase tracking-wider text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] shadow-glow-lime hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <Send size={15} />
                     <span>Send Project Inquiry</span>

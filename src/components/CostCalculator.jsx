@@ -55,18 +55,18 @@ export default function CostCalculator({ onSelectScope }) {
   };
 
   return (
-    <section id="estimate" className="py-24 border-t border-slate-200/80 relative bg-white">
+    <section id="estimate" className="py-24 border-t border-[#222222] relative bg-[#111111]">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Header */}
         <div className="max-w-2xl mb-12">
-          <span className="text-xs font-bold text-brand-indigo uppercase tracking-widest flex items-center gap-1.5">
+          <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
             <Calculator size={14} />
             02 — INTERACTIVE SCOPE ESTIMATOR
           </span>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 mt-2">
-            Calculate your project <span className="text-gradient-indigo">timeline & scope.</span>
+          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
+            Calculate your project <span className="text-[#b6ff00]">timeline & scope.</span>
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base mt-2 font-normal">
+          <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
             Select your requirements to see an estimated turnaround schedule and sample deliverables. No hidden overheads, transparent milestones.
           </p>
         </div>
@@ -74,10 +74,10 @@ export default function CostCalculator({ onSelectScope }) {
         {/* Main Grid: Builder on Left, Estimate Card on Right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left Column: Interactive Controls */}
-          <div className="lg:col-span-7 space-y-8 bg-slate-50/80 p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-2xs">
+          <div className="lg:col-span-7 space-y-8 bg-[#181818] p-6 sm:p-8 rounded-3xl border border-[#262626] shadow-card-soft">
             {/* Step 1: Project Type */}
             <div>
-              <label className="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-3">
+              <label className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-3">
                 1. Select Project Type:
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -90,17 +90,17 @@ export default function CostCalculator({ onSelectScope }) {
                       onClick={() => setSelectedType(type.id)}
                       className={`p-4 rounded-2xl text-left border transition-all duration-200 ${
                         isSelected
-                          ? 'bg-white border-brand-indigo ring-2 ring-indigo-500/10 shadow-sm'
-                          : 'bg-white/80 border-slate-200/80 hover:border-slate-300 text-slate-700'
+                          ? 'bg-[#202020] border-[#b6ff00] ring-1 ring-[#b6ff00]/40 shadow-sm'
+                          : 'bg-[#1c1c1c] border-[#292929] hover:border-[#383838] text-slate-300'
                       }`}
                     >
                       <div className="flex items-center justify-between mb-1">
-                        <span className={`text-sm font-bold ${isSelected ? 'text-brand-indigo' : 'text-slate-800'}`}>
+                        <span className={`text-sm font-bold ${isSelected ? 'text-[#b6ff00]' : 'text-white'}`}>
                           {type.name}
                         </span>
-                        {isSelected && <Check size={16} className="text-brand-indigo" />}
+                        {isSelected && <Check size={16} className="text-[#b6ff00]" />}
                       </div>
-                      <span className="text-[11px] text-slate-500 block">Typical base: ~{type.baseDays} days</span>
+                      <span className="text-[11px] text-slate-400 block">Typical base: ~{type.baseDays} days</span>
                     </button>
                   );
                 })}
@@ -109,7 +109,7 @@ export default function CostCalculator({ onSelectScope }) {
 
             {/* Step 2: Timeline Preference */}
             <div>
-              <label className="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-3">
+              <label className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-3">
                 2. Select Delivery Pace:
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -122,14 +122,14 @@ export default function CostCalculator({ onSelectScope }) {
                       onClick={() => setSelectedTimeline(tl.id)}
                       className={`p-3.5 rounded-2xl text-left border transition-all duration-200 ${
                         isSelected
-                          ? 'bg-white border-brand-indigo ring-2 ring-indigo-500/10 shadow-sm'
-                          : 'bg-white/80 border-slate-200/80 hover:border-slate-300 text-slate-700'
+                          ? 'bg-[#202020] border-[#b6ff00] ring-1 ring-[#b6ff00]/40 shadow-sm'
+                          : 'bg-[#1c1c1c] border-[#292929] hover:border-[#383838] text-slate-300'
                       }`}
                     >
-                      <span className={`text-xs font-bold block ${isSelected ? 'text-brand-indigo' : 'text-slate-800'}`}>
+                      <span className={`text-xs font-bold block ${isSelected ? 'text-[#b6ff00]' : 'text-white'}`}>
                         {tl.label}
                       </span>
-                      <span className="text-[11px] text-slate-500 block mt-0.5">{tl.name}</span>
+                      <span className="text-[11px] text-slate-400 block mt-0.5">{tl.name}</span>
                     </button>
                   );
                 })}
@@ -138,7 +138,7 @@ export default function CostCalculator({ onSelectScope }) {
 
             {/* Step 3: Add-on Capabilities */}
             <div>
-              <label className="text-xs font-bold uppercase tracking-wider text-slate-500 block mb-3">
+              <label className="text-xs font-bold uppercase tracking-wider text-slate-400 block mb-3">
                 3. Key Custom Modules (Optional):
               </label>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -151,17 +151,17 @@ export default function CostCalculator({ onSelectScope }) {
                       onClick={() => toggleAddOn(addon.id)}
                       className={`p-3.5 rounded-2xl text-left border flex items-center justify-between transition-all duration-200 ${
                         isChecked
-                          ? 'bg-white border-emerald-500 ring-2 ring-emerald-500/10 shadow-2xs'
-                          : 'bg-white/80 border-slate-200/80 hover:border-slate-300 text-slate-700'
+                          ? 'bg-[#202020] border-[#b6ff00] ring-1 ring-[#b6ff00]/40 shadow-2xs'
+                          : 'bg-[#1c1c1c] border-[#292929] hover:border-[#383838] text-slate-300'
                       }`}
                     >
                       <div>
-                        <span className="text-xs font-semibold text-slate-800 block">{addon.name}</span>
-                        <span className="text-[11px] text-slate-500">+~{addon.extraDays} days</span>
+                        <span className="text-xs font-semibold text-white block">{addon.name}</span>
+                        <span className="text-[11px] text-slate-400">+~{addon.extraDays} days</span>
                       </div>
                       <div
                         className={`w-5 h-5 rounded-md flex items-center justify-center border transition-colors ${
-                          isChecked ? 'bg-emerald-500 border-emerald-500 text-white' : 'border-slate-300 bg-white'
+                          isChecked ? 'bg-[#b6ff00] border-[#b6ff00] text-[#111111]' : 'border-[#333333] bg-[#181818]'
                         }`}
                       >
                         {isChecked && <Check size={12} strokeWidth={3} />}
@@ -174,49 +174,49 @@ export default function CostCalculator({ onSelectScope }) {
           </div>
 
           {/* Right Column: Estimated Summary Receipt Box */}
-          <div className="lg:col-span-5 bg-gradient-to-b from-white to-slate-50 p-7 sm:p-8 rounded-3xl border border-indigo-100 shadow-xl shadow-slate-200/70 sticky top-28">
-            <div className="flex items-center justify-between pb-4 border-b border-slate-100">
+          <div className="lg:col-span-5 bg-[#181818] p-7 sm:p-8 rounded-3xl border border-[#2b2b2b] shadow-2xl shadow-black sticky top-28">
+            <div className="flex items-center justify-between pb-4 border-b border-[#262626]">
               <span className="text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center gap-1.5">
-                <Sparkles size={14} className="text-brand-indigo" />
+                <Sparkles size={14} className="text-[#b6ff00]" />
                 SCOPE ESTIMATE
               </span>
-              <span className="text-xs font-bold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3 py-0.5 rounded-full">
+              <span className="text-xs font-bold text-[#b6ff00] bg-[#b6ff00]/10 border border-[#b6ff00]/30 px-3 py-0.5 rounded-full">
                 Fixed Proposal
               </span>
             </div>
 
             {/* Estimated Days Large Display */}
-            <div className="py-6 border-b border-slate-100">
-              <div className="text-xs font-semibold text-slate-500">Estimated Turnaround</div>
+            <div className="py-6 border-b border-[#262626]">
+              <div className="text-xs font-semibold text-slate-400">Estimated Turnaround</div>
               <div className="flex items-baseline gap-2 mt-1">
-                <span className="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight">
+                <span className="text-4xl sm:text-5xl font-black text-white tracking-tight">
                   ~{estimatedDays}
                 </span>
-                <span className="text-base font-bold text-slate-500">working days</span>
+                <span className="text-base font-bold text-slate-400">working days</span>
               </div>
-              <p className="text-xs text-slate-500 mt-2 flex items-center gap-1.5">
-                <Clock size={13} className="text-brand-indigo" />
+              <p className="text-xs text-slate-400 mt-2 flex items-center gap-1.5">
+                <Clock size={13} className="text-[#b6ff00]" />
                 <span>Includes architecture, coding, testing, and deployment.</span>
               </p>
             </div>
 
             {/* Breakdown Spec Summary */}
-            <div className="py-5 space-y-3 text-xs border-b border-slate-100">
-              <div className="flex justify-between text-slate-600">
+            <div className="py-5 space-y-3 text-xs border-b border-[#262626]">
+              <div className="flex justify-between text-slate-400">
                 <span>Selected Architecture:</span>
-                <span className="font-bold text-slate-800 text-right">{currentType.name}</span>
+                <span className="font-bold text-slate-200 text-right">{currentType.name}</span>
               </div>
-              <div className="flex justify-between text-slate-600">
+              <div className="flex justify-between text-slate-400">
                 <span>Delivery Pace:</span>
-                <span className="font-bold text-slate-800 text-right">{currentTimeline.name}</span>
+                <span className="font-bold text-slate-200 text-right">{currentTimeline.name}</span>
               </div>
-              <div className="flex justify-between text-slate-600">
+              <div className="flex justify-between text-slate-400">
                 <span>Modules Included:</span>
-                <span className="font-bold text-slate-800 text-right">{selectedAddOns.length} add-ons</span>
+                <span className="font-bold text-slate-200 text-right">{selectedAddOns.length} add-ons</span>
               </div>
-              <div className="flex justify-between text-slate-600">
+              <div className="flex justify-between text-slate-400">
                 <span>Codebase & Ownership:</span>
-                <span className="font-bold text-emerald-600 text-right">100% Full Transfer</span>
+                <span className="font-bold text-[#b6ff00] text-right">100% Full Transfer</span>
               </div>
             </div>
 
@@ -226,7 +226,7 @@ export default function CostCalculator({ onSelectScope }) {
                 href={generateWhatsAppMessage()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3.5 px-4 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
+                className="w-full py-3.5 px-4 rounded-full text-xs font-black uppercase tracking-wider text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] shadow-glow-lime flex items-center justify-center gap-2 transition-all hover:scale-[1.02]"
               >
                 <MessageSquare size={16} />
                 <span>Inquire This Scope on WhatsApp</span>
@@ -235,14 +235,14 @@ export default function CostCalculator({ onSelectScope }) {
               <button
                 type="button"
                 onClick={handleApplyToContact}
-                className="w-full py-3.5 px-4 rounded-full text-xs font-bold uppercase tracking-wider text-slate-700 hover:text-brand-indigo bg-white hover:bg-slate-50 border border-slate-200 shadow-2xs flex items-center justify-center gap-2 transition-all"
+                className="w-full py-3.5 px-4 rounded-full text-xs font-bold uppercase tracking-wider text-slate-300 hover:text-[#b6ff00] bg-[#222222] hover:bg-[#282828] border border-[#2f2f2f] flex items-center justify-center gap-2 transition-all"
               >
                 <span>Send Scope to Seshaan via Email</span>
                 <ArrowRight size={14} />
               </button>
             </div>
 
-            <p className="text-[11px] text-slate-400 text-center mt-4">
+            <p className="text-[11px] text-slate-500 text-center mt-4">
               * Final timeline and milestones confirmed after brief discovery call. Zero obligations.
             </p>
           </div>

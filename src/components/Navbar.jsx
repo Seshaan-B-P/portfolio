@@ -44,7 +44,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/85 backdrop-blur-2xl border-b border-slate-200/80 shadow-md shadow-slate-200/40 py-3.5'
+          ? 'bg-[#111111]/90 backdrop-blur-2xl border-b border-[#222222] shadow-xl shadow-black/50 py-3.5'
           : 'bg-transparent py-5'
       }`}
     >
@@ -52,25 +52,25 @@ export default function Navbar() {
         {/* Brand & Freelance Live Status */}
         <div className="flex items-center gap-3">
           <a href="#home" className="group flex items-center gap-2">
-            <span className="font-black text-2xl tracking-tight text-slate-900 group-hover:text-brand-indigo transition-colors">
-              SB<span className="text-brand-indigo">.</span>
+            <span className="font-black text-2xl tracking-tight text-white group-hover:text-[#b6ff00] transition-colors">
+              SB<span className="text-[#b6ff00]">.</span>
             </span>
           </a>
 
           <a
             href="#contact"
-            className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-emerald-800 bg-emerald-50 border border-emerald-200/80 px-3 py-1 rounded-full hover:bg-emerald-100 transition-colors"
+            className="hidden sm:inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-[#b6ff00] bg-[#b6ff00]/10 border border-[#b6ff00]/30 px-3 py-1 rounded-full hover:bg-[#b6ff00]/20 transition-colors"
           >
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#b6ff00] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#b6ff00]"></span>
             </span>
             <span>Available for Hire</span>
           </a>
         </div>
 
         {/* Desktop Nav Links */}
-        <nav className="hidden lg:flex items-center gap-1 p-1 rounded-full bg-white/80 border border-slate-200/80 shadow-xs backdrop-blur-xl">
+        <nav className="hidden lg:flex items-center gap-1 p-1 rounded-full bg-[#181818]/90 border border-[#2a2a2a] shadow-lg backdrop-blur-xl">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
             return (
@@ -79,8 +79,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`text-xs font-semibold tracking-wider px-3.5 py-1.5 rounded-full transition-all duration-200 ${
                   isActive
-                    ? 'bg-brand-indigo text-white shadow-sm font-bold'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                    ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
+                    : 'text-slate-400 hover:text-white hover:bg-white/5'
                 }`}
               >
                 {link.name}
@@ -94,15 +94,15 @@ export default function Navbar() {
           <a
             href={portfolioData.personal.resumeUrl}
             download="Seshaan_B_P_Resume.pdf"
-            className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-slate-700 bg-white hover:bg-slate-50 border border-slate-200 rounded-full transition-all duration-200 hover:border-slate-300 shadow-2xs"
+            className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-slate-300 bg-[#1a1a1a] hover:bg-[#222222] border border-[#2f2f2f] rounded-full transition-all duration-200 hover:border-[#b6ff00]/50"
           >
-            <FileDown size={14} className="text-slate-500" />
+            <FileDown size={14} className="text-[#b6ff00]" />
             <span>CV</span>
           </a>
 
           <a
             href="#contact"
-            className="flex items-center gap-1.5 px-5 py-2 text-xs font-bold text-white bg-brand-indigo hover:bg-brand-indigo-dark rounded-full transition-all duration-300 shadow-md shadow-brand-indigo/25 hover:shadow-glow-indigo hover:scale-[1.02]"
+            className="flex items-center gap-1.5 px-5 py-2 text-xs font-black text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] rounded-full transition-all duration-300 shadow-glow-lime hover:scale-[1.02]"
           >
             <span>Get a Quote</span>
             <ArrowUpRight size={14} />
@@ -112,7 +112,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden text-slate-700 hover:text-slate-900 p-2 rounded-xl bg-white border border-slate-200 shadow-2xs focus:outline-none transition-colors"
+          className="lg:hidden text-white hover:text-[#b6ff00] p-2 rounded-xl bg-[#1a1a1a] border border-[#2a2a2a] focus:outline-none transition-colors"
           aria-label="Toggle Navigation"
         >
           {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -121,9 +121,9 @@ export default function Navbar() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="lg:hidden bg-white/95 backdrop-blur-2xl border-b border-slate-200 px-6 py-6 space-y-3.5 shadow-xl animate-in fade-in slide-in-from-top-4 duration-200">
-          <div className="flex items-center gap-2 pb-2 text-xs font-bold text-emerald-700">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <div className="lg:hidden bg-[#141414]/98 backdrop-blur-2xl border-b border-[#252525] px-6 py-6 space-y-3.5 shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
+          <div className="flex items-center gap-2 pb-2 text-xs font-bold text-[#b6ff00]">
+            <span className="w-2 h-2 rounded-full bg-[#b6ff00] animate-pulse"></span>
             Available for Freelance Projects
           </div>
           {navLinks.map((link) => (
@@ -131,16 +131,16 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-sm font-semibold text-slate-700 hover:text-brand-indigo py-1.5"
+              className="block text-sm font-semibold text-slate-300 hover:text-[#b6ff00] py-1.5"
             >
               {link.name}
             </a>
           ))}
-          <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
+          <div className="pt-3 border-t border-[#252525] flex flex-col gap-2">
             <a
               href="#contact"
               onClick={() => setIsOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-bold text-white bg-brand-indigo rounded-full shadow-sm"
+              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-black text-[#111111] bg-[#b6ff00] rounded-full shadow-glow-lime"
             >
               <span>Start a Project / Hire Me</span>
               <ArrowUpRight size={14} />
@@ -148,7 +148,7 @@ export default function Navbar() {
             <a
               href={portfolioData.personal.resumeUrl}
               download="Seshaan_B_P_Resume.pdf"
-              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-semibold text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-full"
+              className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-semibold text-slate-300 bg-[#1c1c1c] hover:bg-[#252525] rounded-full"
             >
               <FileDown size={14} />
               <span>Download Resume (PDF)</span>

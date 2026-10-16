@@ -8,9 +8,9 @@ export default function ThreeBackground() {
     const container = mountRef.current;
     if (!container) return;
 
-    // 1. Scene, Camera, Renderer with Light Fog
+    // 1. Scene, Camera, Renderer with Dark Matte Fog
     const scene = new THREE.Scene();
-    scene.fog = new THREE.FogExp2(0xf8fafc, 0.0016);
+    scene.fog = new THREE.FogExp2(0x111111, 0.0018);
 
     const camera = new THREE.PerspectiveCamera(
       60,
@@ -25,28 +25,28 @@ export default function ThreeBackground() {
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
 
-    // 2. Studio Lighting for 3D Geometry
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
+    // 2. Neon Lighting for 3D Geometry
+    const ambientLight = new THREE.AmbientLight(0x222222, 0.6);
     scene.add(ambientLight);
 
-    const dirLight = new THREE.DirectionalLight(0x6366f1, 1.2);
+    const dirLight = new THREE.DirectionalLight(0xb6ff00, 1.4);
     dirLight.position.set(100, 150, 120);
     scene.add(dirLight);
 
-    const pointLight = new THREE.PointLight(0x0284c7, 1.5, 600);
+    const pointLight = new THREE.PointLight(0xb6ff00, 1.8, 600);
     pointLight.position.set(-120, -100, 100);
     scene.add(pointLight);
 
-    // 3. Multi-color Particle Constellation Field
+    // 3. Electric Lime & Monochromatic Particle Field
     const particleCount = 1200;
     const geometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const color1 = new THREE.Color('#4f46e5'); // Electric Indigo
-    const color2 = new THREE.Color('#0284c7'); // Sky Cyan
-    const color3 = new THREE.Color('#10b981'); // Emerald
-    const color4 = new THREE.Color('#8b5cf6'); // Violet
+    const color1 = new THREE.Color('#b6ff00'); // Electric Lime Accent
+    const color2 = new THREE.Color('#ffffff'); // Pure Star White
+    const color3 = new THREE.Color('#94d800'); // Deep Lime
+    const color4 = new THREE.Color('#333333'); // Stealth Charcoal
 
     for (let i = 0; i < particleCount; i++) {
       positions[i * 3] = (Math.random() - 0.5) * 880;
@@ -54,7 +54,7 @@ export default function ThreeBackground() {
       positions[i * 3 + 2] = (Math.random() - 0.5) * 650;
 
       const rand = Math.random();
-      const mixedColor = rand < 0.35 ? color1 : (rand < 0.65 ? color2 : (rand < 0.85 ? color3 : color4));
+      const mixedColor = rand < 0.45 ? color1 : (rand < 0.70 ? color2 : (rand < 0.85 ? color3 : color4));
       colors[i * 3] = mixedColor.r;
       colors[i * 3 + 1] = mixedColor.g;
       colors[i * 3 + 2] = mixedColor.b;
@@ -64,24 +64,24 @@ export default function ThreeBackground() {
     geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
 
     const material = new THREE.PointsMaterial({
-      size: 2.8,
+      size: 2.6,
       vertexColors: true,
       transparent: true,
-      opacity: 0.42,
-      blending: THREE.NormalBlending,
+      opacity: 0.55,
+      blending: THREE.AdditiveBlending,
     });
 
     const particles = new THREE.Points(geometry, material);
     scene.add(particles);
 
-    // 4. Floating 3D Wireframe Sculptures
+    // 4. Floating 3D Wireframe Sculptures in Electric Lime
     // A. Torus Knot (Sculptural center-right)
     const torusGeometry = new THREE.TorusKnotGeometry(48, 12, 100, 16);
     const torusMaterial = new THREE.MeshBasicMaterial({
-      color: 0x4f46e5,
+      color: 0xb6ff00,
       wireframe: true,
       transparent: true,
-      opacity: 0.11,
+      opacity: 0.18,
     });
     const torusKnot = new THREE.Mesh(torusGeometry, torusMaterial);
     torusKnot.position.set(130, 45, -110);
@@ -90,10 +90,10 @@ export default function ThreeBackground() {
     // B. Faceted Icosahedron (Left)
     const icosaGeometry = new THREE.IcosahedronGeometry(52, 1);
     const icosaMaterial = new THREE.MeshBasicMaterial({
-      color: 0x0284c7,
+      color: 0xb6ff00,
       wireframe: true,
       transparent: true,
-      opacity: 0.09,
+      opacity: 0.15,
     });
     const icosa = new THREE.Mesh(icosaGeometry, icosaMaterial);
     icosa.position.set(-155, -45, -90);
@@ -102,10 +102,10 @@ export default function ThreeBackground() {
     // C. Octahedron Core (Lower center)
     const octaGeometry = new THREE.OctahedronGeometry(36, 0);
     const octaMaterial = new THREE.MeshBasicMaterial({
-      color: 0x10b981,
+      color: 0xb6ff00,
       wireframe: true,
       transparent: true,
-      opacity: 0.09,
+      opacity: 0.15,
     });
     const octa = new THREE.Mesh(octaGeometry, octaMaterial);
     octa.position.set(20, -120, -120);

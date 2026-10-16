@@ -7,24 +7,42 @@ export default {
   theme: {
     extend: {
       colors: {
+        dark: {
+          bg: '#111111',
+          surface: '#161616',
+          card: '#1a1a1a',
+          cardHover: '#202020',
+          border: '#262626',
+          borderLight: '#333333',
+        },
+        lime: {
+          DEFAULT: '#b6ff00',
+          accent: '#b6ff00',
+          hover: '#c6ff24',
+          dark: '#93cc00',
+          muted: '#80b300',
+        },
         brand: {
-          indigo: '#4f46e5',
-          'indigo-light': '#6366f1',
-          'indigo-dark': '#3730a3',
-          purple: '#7c5cff',
-          cyan: '#0284c7',
-          'cyan-light': '#0ea5e9',
-          emerald: '#059669',
-          'emerald-light': '#10b981',
-          amber: '#d97706',
-          rose: '#e11d48'
+          indigo: '#b6ff00',
+          'indigo-light': '#c8ff33',
+          'indigo-dark': '#9cd400',
+          lime: '#b6ff00',
+          dark: '#111111',
+          card: '#1a1a1a',
+          purple: '#b6ff00',
+          cyan: '#b6ff00',
+          'cyan-light': '#c8ff33',
+          emerald: '#b6ff00',
+          'emerald-light': '#b6ff00',
+          amber: '#b6ff00',
+          rose: '#ff4d4d'
         },
         surface: {
-          50: '#f8fafc',
-          100: '#f1f5f9',
-          200: '#e2e8f0',
-          300: '#cbd5e1',
-          card: '#ffffff'
+          50: '#111111',
+          100: '#161616',
+          200: '#202020',
+          300: '#2b2b2b',
+          card: '#1a1a1a'
         }
       },
       fontFamily: {
@@ -33,11 +51,12 @@ export default {
         heading: ['Outfit', 'sans-serif'],
       },
       boxShadow: {
-        'card-soft': '0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03)',
-        'card-hover': '0 20px 35px -8px rgba(79, 70, 229, 0.12), 0 6px 16px -4px rgba(15, 23, 42, 0.04)',
-        'glow-indigo': '0 10px 25px -4px rgba(79, 70, 229, 0.3)',
-        'glow-emerald': '0 10px 25px -4px rgba(16, 185, 129, 0.3)',
-        'glow-cyan': '0 10px 25px -4px rgba(2, 132, 199, 0.25)',
+        'card-soft': '0 4px 20px -2px rgba(0, 0, 0, 0.5), 0 2px 6px -1px rgba(0, 0, 0, 0.4)',
+        'card-hover': '0 20px 40px -10px rgba(182, 255, 0, 0.18), 0 0 0 1px rgba(182, 255, 0, 0.35)',
+        'glow-indigo': '0 0 25px -4px rgba(182, 255, 0, 0.45)',
+        'glow-lime': '0 0 25px -4px rgba(182, 255, 0, 0.45)',
+        'glow-emerald': '0 0 25px -4px rgba(182, 255, 0, 0.35)',
+        'glow-cyan': '0 0 25px -4px rgba(182, 255, 0, 0.35)',
       },
       animation: {
         'float-slow': 'float 5s ease-in-out infinite',

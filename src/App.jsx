@@ -46,17 +46,17 @@ export default function App() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-slate-50 text-slate-800 font-sans selection:bg-brand-indigo/15 selection:text-brand-indigo overflow-x-hidden">
-      {/* 1. Real 3D Three.js Interactive Particle Background tuned for Light Theme */}
+    <div className="relative min-h-screen bg-[#111111] text-slate-200 font-sans selection:bg-[#b6ff00] selection:text-[#111111] overflow-x-hidden">
+      {/* 1. Real 3D Three.js Interactive Particle Background tuned for Dark Neon Theme */}
       <ThreeBackground />
 
-      {/* 2. Soft Ambient Cursor Follower Glow for Light Aesthetics */}
+      {/* 2. Soft Ambient Cursor Follower Glow for Electric Lime Aesthetics */}
       <div
         className="fixed w-[360px] h-[360px] rounded-full pointer-events-none -z-10 -translate-x-1/2 -translate-y-1/2 transition-transform duration-75 ease-out"
         style={{
           left: `${mousePos.x}px`,
           top: `${mousePos.y}px`,
-          background: 'radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, rgba(2, 132, 199, 0.04) 40%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(182, 255, 0, 0.12) 0%, rgba(182, 255, 0, 0.04) 40%, transparent 70%)',
         }}
       />
 
@@ -83,7 +83,7 @@ export default function App() {
 
       {/* 6. Interactive Toast Alert */}
       {toast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full bg-slate-900 text-white text-xs font-bold border border-slate-700 shadow-xl shadow-slate-900/30 backdrop-blur-2xl animate-in fade-in slide-in-from-bottom-3 duration-200">
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full bg-[#181818] text-[#b6ff00] text-xs font-bold border border-[#b6ff00]/40 shadow-xl shadow-black/80 backdrop-blur-2xl animate-in fade-in slide-in-from-bottom-3 duration-200">
           {toast}
         </div>
       )}
