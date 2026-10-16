@@ -16,15 +16,16 @@ export default function Footer() {
               SB<span className="text-[#b6ff00]">.</span>
             </span>
             <p className="text-xs text-slate-400 mt-1 max-w-sm">
-              Freelance Full-Stack Developer specializing in MERN Stack, high-performance web applications, and modern reactive user interfaces.
+              MCA Student & Aspiring Software Development Engineer (SDE) specializing in MERN Stack, production web systems, and modern responsive user interfaces.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-6 text-xs font-semibold text-slate-400">
-            <a href="#services" className="hover:text-[#b6ff00] transition-colors">Services</a>
-            <a href="#projects" className="hover:text-[#b6ff00] transition-colors">Case Studies</a>
-            <a href="#process" className="hover:text-[#b6ff00] transition-colors">Process</a>
+            <a href="#services" className="hover:text-[#b6ff00] transition-colors">Expertise</a>
+            <a href="#projects" className="hover:text-[#b6ff00] transition-colors">Projects</a>
+            <a href="#process" className="hover:text-[#b6ff00] transition-colors">Workflow</a>
             <a href="#skills" className="hover:text-[#b6ff00] transition-colors">Skills</a>
+            <a href="#education" className="hover:text-[#b6ff00] transition-colors">Education</a>
             <a href="#contact" className="hover:text-[#b6ff00] transition-colors">Contact</a>
           </div>
 
@@ -43,7 +44,7 @@ export default function Footer() {
             © 2026 <strong className="text-slate-300 font-semibold">{portfolioData.personal.name}</strong>. All rights reserved.
           </div>
           <div className="flex items-center gap-2 text-slate-500">
-            <span>High Voltage Dark Mode • MERN Stack Architecture</span>
+            <span>MCA Student Portfolio • MERN Stack Architecture • Open to SDE Roles</span>
           </div>
         </div>
       </div>

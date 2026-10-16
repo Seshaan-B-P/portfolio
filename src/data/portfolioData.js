@@ -1,65 +1,64 @@
 export const portfolioData = {
   personal: {
     name: "Seshaan B P",
-    eyebrow: "FREELANCE FULL-STACK DEVELOPER • MERN SPECIALIST",
-    headline: "Building Scalable Web Apps & Digital Products That Drive Real Business Growth.",
-    tagline: "I help founders, businesses, and startups build fast, reliable MERN stack web applications, custom CRM portals, and modern interactive user interfaces.",
-    availability: "Available for Freelance Projects & Remote Contracts",
+    eyebrow: "MCA CANDIDATE • FULL-STACK MERN DEVELOPER • ASPIRING SDE",
+    headline: "Building Scalable Full-Stack Systems & Solving Real-World Engineering Problems.",
+    tagline: "MCA student at M. Kumarasamy College of Engineering (79%). Passionate about MERN stack architectures, robust backend APIs, and scalable digital solutions. Actively seeking SDE, Software Engineer & Full-Stack roles.",
+    availability: "Open for SDE Roles & Engineering Internships",
     location: "Karur, Tamil Nadu, India (IST • UTC+5:30)",
     phone: "+91 8124931018",
-    whatsapp: "https://wa.me/918124931018?text=Hi%20Seshaan!%20I%20found%20your%20freelance%20portfolio%20and%20would%20like%20to%20discuss%20a%20project.",
+    whatsapp: "https://wa.me/918124931018?text=Hi%20Seshaan!%20I%20viewed%20your%20student%20portfolio%20and%20would%20like%20to%20connect%20regarding%20an%20opportunity.",
     email: "seshaanbp2709@gmail.com",
     linkedin: "https://linkedin.com/in/seshaanbp",
     github: "https://github.com/Seshaan-B-P",
     resumeUrl: "/Seshaan_B_P_Resume.pdf",
     heroImage: "/hero-image.jpg",
     avatarImage: "/profile.jpg",
-    turnaround: "Fast 1–3 Weeks Delivery",
-    pricingModel: "Fixed Project or Milestone-Based",
+    roleTarget: "Software Development Engineer (SDE) / Full-Stack Engineer",
     summary:
-      "MCA candidate and freelance Full-Stack Engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in leading development teams, building production-grade web systems like custom CRMs with automated document generation and dental clinic EHR platforms. I deliver clean, maintainable code with high performance, robust security, and transparent communication."
+      "MCA candidate and Full-Stack Software Engineer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). Experienced in leading development teams, architecting production-grade web systems like custom CRMs with automated document generation and dental clinic EHR platforms. Genesis'26 Hackathon Winner and competitive programmer aiming to create high-impact software."
   },
 
-  freelanceTrustMetrics: [
-    { value: "100%", label: "On-Time Delivery", description: "Strict adherence to agreed sprint milestones" },
-    { value: "03+", label: "Production Web Apps", description: "Live client & academic deployments on Vercel" },
-    { value: "01", label: "Hackathon Winner", description: "Genesis'26 Syntax2Code 1st Place Champion" },
+  studentTrustMetrics: [
+    { value: "79%", label: "MCA Academic Score", description: "Consistent academic excellence in computer applications" },
+    { value: "03+", label: "Deployed Full-Stack Apps", description: "Live production web apps with full source code" },
+    { value: "1st", label: "Genesis'26 Champion", description: "Syntax2Code 1st Place Hackathon Winner" },
     { value: "15.5k", label: "TCS CodeVita Rank", description: "Top percentile in global algorithmic coding" }
   ],
 
   services: [
     {
       id: "saas-apps",
-      title: "Full-Stack Web & SaaS Apps",
-      subtitle: "End-to-End MERN Development",
-      description: "Custom, scalable web platforms built from scratch with React frontend, Node/Express backend, and high-performance MongoDB data models.",
+      title: "Full-Stack Web Development",
+      subtitle: "MERN Architecture & Microservices",
+      description: "Designing and developing scalable web applications with React frontend, Node/Express backend, and high-performance MongoDB data models.",
       deliverables: [
-        "Production-ready MERN Stack architecture",
+        "Production MERN Stack architecture",
         "Role-based access control (RBAC & JWT)",
         "Responsive, mobile-optimized layouts",
-        "Continuous Deployment setup on Vercel/Cloud"
+        "Continuous Deployment setup on Vercel"
       ],
       popular: true,
-      tag: "Most Requested"
+      tag: "Core Focus"
     },
     {
       id: "crm-portals",
-      title: "Custom CRM & Internal Portals",
+      title: "Custom Portals & Data Automation",
       subtitle: "Operations & Analytics Systems",
-      description: "Automate manual business workflows with tailor-made dashboard portals featuring dynamic charting, filtered data tables, and automated Excel/PDF document exports.",
+      description: "Engineering dashboards and data management tools with live analytics, dynamic charting, and automated Excel/PDF document exports.",
       deliverables: [
         "Automated PDF & Excel report generators",
         "Interactive KPI charts and analytics",
-        "Donor, patient, or client registry management",
+        "Donor, patient, or record registries",
         "Audit logging and multi-tier user roles"
       ],
       popular: false,
-      tag: "Enterprise Value"
+      tag: "Team Lead Project"
     },
     {
       id: "healthcare-ehr",
-      title: "Clinic & Healthcare Portals",
-      subtitle: "EHR & Appointment Systems",
+      title: "Healthcare Informatics & EHR",
+      subtitle: "Clinical Records & Workflow Systems",
       description: "Specialized Electronic Health Record platforms with patient histories, prescription tracking, and appointment scheduling engineered with clinic privacy in mind.",
       deliverables: [
         "Patient records & clinical history tracking",
@@ -68,25 +67,25 @@ export const portfolioData = {
         "Zero-downtime cloud hosting configuration"
       ],
       popular: false,
-      tag: "Specialized"
+      tag: "Applied Engineering"
     },
     {
       id: "landing-websites",
-      title: "High-Converting Business Websites",
-      subtitle: "Fast, Modern & SEO-Ready",
-      description: "Sleek, lightning-fast business showcases and portfolio websites built with modern React, Vite, and Tailwind CSS designed to turn visitors into paying clients.",
+      title: "Frontend Systems & UI/UX",
+      subtitle: "React 18, Vite & Tailwind CSS",
+      description: "Crafting fast, accessible, and responsive user interfaces with component-driven architecture, smooth micro-animations, and interactive 3D elements.",
       deliverables: [
         "Sub-second load times & Core Web Vitals optimization",
-        "Micro-animations and modern glassmorphism aesthetic",
-        "Lead capture forms with direct WhatsApp/email triggers",
+        "Modern dark mode & glassmorphism aesthetic",
+        "Component-driven modular React architecture",
         "Full SEO tags, Open Graph, and mobile responsiveness"
       ],
       popular: false,
-      tag: "Quick Turnaround"
+      tag: "Modern Frontend"
     },
     {
       id: "api-backend",
-      title: "API Engineering & DB Architecture",
+      title: "REST APIs & Database Design",
       subtitle: "Robust Backend Infrastructure",
       description: "Clean, documented RESTful APIs with secure JWT authentication, input sanitization, and structured MongoDB schemas ready for web and mobile frontends.",
       deliverables: [
@@ -100,46 +99,26 @@ export const portfolioData = {
     }
   ],
 
-  calculatorPresets: {
-    projectTypes: [
-      { id: "saas", name: "Full-Stack SaaS / Web App", baseDays: 18, focus: "MERN Architecture & DB" },
-      { id: "crm", name: "Custom CRM / Business Portal", baseDays: 14, focus: "Operations & Reporting" },
-      { id: "ehr", name: "Clinic / Health EHR System", baseDays: 16, focus: "Clinical Records & Portals" },
-      { id: "landing", name: "High-Speed Business Website", baseDays: 7, focus: "React + Tailwind Speed" }
-    ],
-    timelines: [
-      { id: "rush", name: "Rush Delivery (Priority Sprint)", multiplier: 1.15, label: "⚡ Express Track" },
-      { id: "standard", name: "Standard Delivery (Recommended)", multiplier: 1.0, label: "✨ Balanced Pace" },
-      { id: "flexible", name: "Flexible Milestone Schedule", multiplier: 0.95, label: "🌱 Relaxed Milestones" }
-    ],
-    addOns: [
-      { id: "pdf_export", name: "Automated PDF & Excel Export", extraDays: 2 },
-      { id: "auth_rbac", name: "Role-Based Auth (Admin, Manager, User)", extraDays: 3 },
-      { id: "whatsapp_notify", name: "Direct WhatsApp / Email Alerts", extraDays: 1 },
-      { id: "analytics_dash", name: "Interactive Charts & KPI Dashboard", extraDays: 2 }
-    ]
-  },
-
-  freelanceProcess: [
+  engineeringProcess: [
     {
       step: "01",
-      title: "Discovery & Scope",
-      description: "We review your core requirements, target users, deliverables, and timeline. I provide a fixed proposal with clear milestones."
+      title: "Requirement Modeling",
+      description: "Deconstructing complex real-world workflows into clear system specifications, entity diagrams, and functional requirements."
     },
     {
       step: "02",
-      title: "Interactive UI & Architecture",
-      description: "We align on modern design aesthetics, component flow, and database schemas before writing a single line of backend logic."
+      title: "Architecture & Schema",
+      description: "Selecting optimal database schemas, structuring modular RESTful endpoints, and establishing authentication & security boundaries."
     },
     {
       step: "03",
-      title: "Agile Sprints & Live Demos",
-      description: "I build the features in focused sprints with regular preview links, allowing you to test real functionality as it develops."
+      title: "Agile Implementation",
+      description: "Writing modular, clean code following OOP & SOLID principles, reusable component patterns, and disciplined Git version control."
     },
     {
       step: "04",
-      title: "Production Launch & Support",
-      description: "Zero-downtime deployment on Vercel/Cloud, complete source code handover, documentation, and complimentary post-launch support."
+      title: "Testing & Deployment",
+      description: "Rigorous functional testing, responsive cross-device verification, and continuous deployment to cloud environments like Vercel."
     }
   ],
 
@@ -229,11 +208,11 @@ export const portfolioData = {
       { name: "SQL", type: "Relational Queries" }
     ],
     workEthics: [
-      "Daily asynchronous updates & clear progress logs",
-      "Clean, modular, and well-commented codebases",
-      "Prompt response time across WhatsApp and Email",
-      "Flexible revision cycles until client satisfaction",
-      "Full IP & source code transfer upon completion"
+      "Strong computer science fundamentals & database design skills",
+      "Fast self-learner able to master new frameworks and toolchains quickly",
+      "Hands-on experience leading 3-member engineering teams in college",
+      "Proven competitive programming & hackathon problem-solving skills",
+      "Clean, modular, well-documented code with disciplined Git practices"
     ]
   },
 
@@ -243,14 +222,14 @@ export const portfolioData = {
         "Seshaan demonstrated outstanding leadership and technical prowess when building our EEGA Trust CRM. The automated PDF report generation and role management saved our team dozens of hours every month.",
       author: "Trust Operations Lead",
       role: "EEGA Trust CRM Stakeholder",
-      tag: "Client Impact"
+      tag: "Project Feedback"
     },
     {
       quote:
         "Working with Seshaan on SmileCare was effortless. He has a rare ability to understand complex healthcare workflows and turn them into an intuitive, clean interface that doctors can use without training.",
       author: "Co-Developer & Peer",
       role: "SmileCare EHR Engineering Team",
-      tag: "Collaboration"
+      tag: "Peer Review"
     },
     {
       quote:
@@ -349,24 +328,24 @@ export const portfolioData = {
 
   faqs: [
     {
-      question: "What is your typical turnaround time for a freelance project?",
-      answer: "For a focused business website or landing page, typically 5–10 days. For custom web applications, MVPs, or full-stack CRMs with authentication and database architecture, delivery ranges from 2 to 4 weeks depending on the agreed scope."
+      question: "What types of roles and opportunities are you currently seeking?",
+      answer: "I am actively seeking full-time Software Development Engineer (SDE), Full-Stack Developer, Frontend/Backend Engineer roles, and Software Engineering internships starting immediately or upon graduation."
     },
     {
-      question: "How do we structure project milestones and payments?",
-      answer: "We typically work on a 50/50 milestone basis (50% upfront upon roadmap sign-off, 50% upon final live deployment and approval) or broken down into sprint milestones for larger projects. I provide detailed invoices."
+      question: "What is your academic status and graduation timeline?",
+      answer: "I am pursuing my Master of Computer Applications (MCA) at M. Kumarasamy College of Engineering, Karur (currently in Semester III with a 79% score). I hold a B.Com degree graduated in 2025."
     },
     {
-      question: "Do you provide post-launch support and revisions?",
-      answer: "Yes! Every freelance project includes 14 to 30 days of complimentary bug fixes and support after delivery to make sure everything runs smoothly in production."
+      question: "Are you open to relocation or remote opportunities?",
+      answer: "Yes, absolutely! I am willing to relocate to major tech hubs across India (Bangalore, Chennai, Hyderabad, Pune, Mumbai, Delhi-NCR) as well as work in remote or hybrid setups."
     },
     {
-      question: "Do I get full ownership of the source code?",
-      answer: "100% yes. All source code, design assets, and repository ownership are transferred completely to you upon project completion."
+      question: "Do you have experience working in or leading technical teams?",
+      answer: "Yes. I served as the Team Lead for both the EEGA Trust CRM and SmileCare Dental EHR projects, directing 3-member developer teams through architecture, implementation, and deployment. I also led my team to win 1st Place at the Genesis'26 Syntax2Code Hackathon."
     },
     {
-      question: "Can we integrate WhatsApp or custom notification systems?",
-      answer: "Absolutely. I regularly integrate direct WhatsApp click-to-chat triggers, automated email alerts via Nodemailer/SendGrid, and document export systems (Excel & PDF)."
+      question: "What are your core technical strengths and programming languages?",
+      answer: "My strongest stack is Full-Stack MERN (MongoDB, Express.js, React.js, Node.js) with Tailwind CSS. I also have solid problem-solving foundation in Java, Python, and SQL, and competed in TCS CodeVita Season 13 achieving an international rank of 15,511."
     }
   ]
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, MessageSquare, CheckCircle2, ShieldCheck, MapPin, Zap } from 'lucide-react';
+import { ArrowRight, MessageSquare, CheckCircle2, ShieldCheck, MapPin, Trophy, FileDown } from 'lucide-react';
 import { LinkedinIcon, GithubIcon } from './SocialIcons';
 import Tilt3DCard from './Tilt3DCard';
 import { portfolioData } from '../data/portfolioData';
@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="absolute bottom-1/4 right-10 w-[420px] h-[420px] bg-[#b6ff00]/5 rounded-full blur-[140px] pointer-events-none -z-10 animate-float-subtle" style={{ animationDelay: '2s' }} />
 
       <div className="max-w-7xl mx-auto px-5 sm:px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-        {/* Left Column: Freelancer Headline & Value Proposition */}
+        {/* Left Column: Student Headline & Academic / Technical Strengths */}
         <div className="lg:col-span-7 space-y-6 text-left">
           {/* Availability Pill */}
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-[#181818]/90 border border-[#b6ff00]/30 text-xs font-semibold tracking-wide text-[#b6ff00] shadow-sm backdrop-blur-md">
@@ -25,22 +25,22 @@ export default function Hero() {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.08] text-white">
-            Engineering digital experiences that{' '}
-            <span className="text-[#b6ff00] drop-shadow-[0_0_35px_rgba(182,255,0,0.4)]">accelerate business.</span>
+            Engineering scalable software &{' '}
+            <span className="text-[#b6ff00] drop-shadow-[0_0_35px_rgba(182,255,0,0.4)]">solving real problems.</span>
           </h1>
 
           {/* Subtext */}
           <p className="text-base sm:text-lg text-slate-400 max-w-xl font-normal leading-relaxed">
-            I’m <span className="text-white font-bold">{portfolioData.personal.name}</span> — MCA candidate and freelance Full-Stack Engineer. I specialize in architecting production MERN applications, automated CRM portals, and high-performance interactive interfaces.
+            I’m <span className="text-white font-bold">{portfolioData.personal.name}</span> — MCA candidate at M. Kumarasamy College of Engineering (79%). Passionate Full-Stack Engineer specializing in MERN architectures, robust backend APIs, and modern interactive web systems. Actively seeking SDE and Software Engineer opportunities.
           </p>
 
           {/* 3D Value Pills */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-1 max-w-xl">
             <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-[#181818] border border-[#262626] shadow-card-soft text-xs font-semibold text-slate-200 hover:border-[#b6ff00]/50 hover:shadow-card-hover transition-all group">
               <div className="p-1.5 rounded-lg bg-[#222222] text-[#b6ff00] group-hover:scale-110 transition-transform">
-                <Zap size={14} />
+                <Trophy size={14} />
               </div>
-              <span>Fast 1–3 Wk Turnaround</span>
+              <span>Hackathon 1st Place</span>
             </div>
 
             <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-[#181818] border border-[#262626] shadow-card-soft text-xs font-semibold text-slate-200 hover:border-[#b6ff00]/50 hover:shadow-card-hover transition-all group">
@@ -54,35 +54,34 @@ export default function Hero() {
               <div className="p-1.5 rounded-lg bg-[#222222] text-[#b6ff00] group-hover:scale-110 transition-transform">
                 <CheckCircle2 size={14} />
               </div>
-              <span>100% Code Ownership</span>
+              <span>79% MCA Aggregate</span>
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3.5 pt-3">
             <a
-              href="#contact"
+              href="#projects"
               className="px-8 py-4 text-xs font-black uppercase tracking-wider text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] rounded-full transition-all duration-300 flex items-center gap-2.5 shadow-glow-lime hover:scale-[1.02] shimmer-hover"
             >
-              <span>Start a Project</span>
+              <span>Explore My Work</span>
               <ArrowRight size={15} />
             </a>
 
             <a
-              href={portfolioData.personal.whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={portfolioData.personal.resumeUrl}
+              download="Seshaan_B_P_Resume.pdf"
               className="px-6 py-4 text-xs font-bold uppercase tracking-wider text-slate-200 bg-[#181818] hover:bg-[#222222] border border-[#2d2d2d] hover:border-[#b6ff00]/50 rounded-full transition-all duration-300 flex items-center gap-2 hover:scale-[1.02] shadow-2xs"
             >
-              <MessageSquare size={15} className="text-[#b6ff00]" />
-              <span>WhatsApp Chat</span>
+              <FileDown size={15} className="text-[#b6ff00]" />
+              <span>Download Resume</span>
             </a>
 
             <a
-              href="#projects"
+              href="#contact"
               className="px-5 py-4 text-xs font-semibold text-slate-400 hover:text-[#b6ff00] transition-colors"
             >
-              View Client Work ↓
+              Get in Touch ↓
             </a>
           </div>
 

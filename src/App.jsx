@@ -63,7 +63,7 @@ export default function App() {
       {/* 3. Sticky Frosted Glass Navigation */}
       <Navbar />
 
-      {/* 4. Main Freelance Portfolio Content */}
+      {/* 4. Main Student Portfolio Content */}
       <main className="relative z-10">
         <Hero />
         <MarqueeTicker />

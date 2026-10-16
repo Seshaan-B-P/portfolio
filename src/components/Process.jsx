@@ -18,19 +18,19 @@ export default function Process() {
         <div className="max-w-2xl mb-14">
           <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
             <Sparkles size={14} />
-            03 — COLLABORATION WORKFLOW
+            03 — ENGINEERING & DEVELOPMENT WORKFLOW
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
-            A transparent, <span className="text-[#b6ff00]">frictionless process.</span>
+            Structured methodology, <span className="text-[#b6ff00]">clean execution.</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
-            No endless meetings or opaque agency handoffs. Direct communication, iterative preview links, and zero guesswork from day one.
+            From requirement deconstruction and schema design to modular development and cloud deployment, ensuring disciplined engineering at every stage.
           </p>
         </div>
 
         {/* 4 Steps Grid with 3D Tilt */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {portfolioData.freelanceProcess.map((step, idx) => (
+          {portfolioData.engineeringProcess.map((step, idx) => (
             <Tilt3DCard
               key={step.step}
               maxTilt={12}

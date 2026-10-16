@@ -21,10 +21,10 @@ export default function Projects() {
           <div className="max-w-2xl">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              02 — SELECTED CASE STUDIES
+              02 — FEATURED CAPSTONE & PRODUCTION PROJECTS
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
-              Proven work with <span className="text-[#b6ff00]">measurable impact.</span>
+              Real-world systems with <span className="text-[#b6ff00]">demonstrated impact.</span>
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
               Production web applications engineered with MERN architecture, responsive Tailwind styling, automated PDF/Excel document flows, and live Vercel deployments.
@@ -42,7 +42,7 @@ export default function Projects() {
                     : 'text-slate-400 hover:text-white'
                 }`}
               >
-                All Work ({portfolioData.projects.length})
+                All Projects ({portfolioData.projects.length})
               </button>
               <button
                 onClick={() => setFilter('lead')}
@@ -52,7 +52,7 @@ export default function Projects() {
                     : 'text-slate-400 hover:text-white'
                 }`}
               >
-                Team Lead Builds
+                Team Lead Projects
               </button>
               <button
                 onClick={() => setFilter('fullstack')}
@@ -62,7 +62,7 @@ export default function Projects() {
                     : 'text-slate-400 hover:text-white'
                 }`}
               >
-                Business Websites
+                Full-Stack Builds
               </button>
             </div>
           </div>

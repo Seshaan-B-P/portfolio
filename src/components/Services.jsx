@@ -20,19 +20,19 @@ export default function Services({ onSelectService }) {
           <div className="max-w-2xl">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              01 — FREELANCE OFFERINGS
+              01 — TECHNICAL COMPETENCIES & DOMAINS
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">
-              Solutions engineered to <span className="text-[#b6ff00]">deliver business results.</span>
+              Engineering capabilities built for <span className="text-[#b6ff00]">production systems.</span>
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
-              From MVP ideation to production CRM engineering, each system is crafted with clean architecture, high scalability, and 100% code ownership.
+              From full-stack web applications to automated CRM portals and clinical health platforms, crafted with clean software architecture and high scalability.
             </p>
           </div>
 
           <div className="flex items-center gap-2 self-start md:self-auto text-xs font-semibold text-slate-300 bg-[#181818] px-4 py-2 rounded-full border border-[#2a2a2a] shadow-md">
             <span className="w-2 h-2 rounded-full bg-[#b6ff00]"></span>
-            <span>Fixed Scope Proposals or Sprint Retainers</span>
+            <span>Open for Full-Time SDE & Intern Roles</span>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function Services({ onSelectService }) {
                   className="space-y-2.5 pt-4 border-t border-[#262626]"
                 >
                   <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block">
-                    Deliverables Included:
+                    Core Capabilities:
                   </span>
                   {service.deliverables.map((item, dIdx) => (
                     <div key={dIdx} className="flex items-start gap-2.5 text-xs text-slate-300">
@@ -113,7 +113,7 @@ export default function Services({ onSelectService }) {
                   onClick={() => onSelectService && onSelectService(service.title)}
                   className="w-full py-3 px-4 rounded-2xl text-xs font-black uppercase tracking-wider text-slate-200 bg-[#222222] border border-[#2f2f2f] hover:border-[#b6ff00] flex items-center justify-center gap-2 transition-all group-hover:bg-[#b6ff00] group-hover:text-[#111111] group-hover:border-[#b6ff00] shadow-sm"
                 >
-                  <span>Inquire This Service</span>
+                  <span>Connect Regarding This Domain</span>
                   <ArrowRight size={14} />
                 </a>
               </div>

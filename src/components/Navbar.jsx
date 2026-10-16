@@ -32,11 +32,13 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Services', href: '#services', id: 'services' },
-    { name: 'Work', href: '#projects', id: 'projects' },
-    { name: 'Process', href: '#process', id: 'process' },
+    { name: 'Expertise', href: '#services', id: 'services' },
+    { name: 'Projects', href: '#projects', id: 'projects' },
+    { name: 'Workflow', href: '#process', id: 'process' },
+    { name: 'About', href: '#about', id: 'about' },
     { name: 'Skills', href: '#skills', id: 'skills' },
     { name: 'Experience', href: '#experience', id: 'experience' },
+    { name: 'Education', href: '#education', id: 'education' },
     { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
@@ -49,7 +51,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
-        {/* Brand & Freelance Live Status */}
+        {/* Brand & Student Live Status */}
         <div className="flex items-center gap-3">
           <a href="#home" className="group flex items-center gap-2">
             <span className="font-black text-2xl tracking-tight text-white group-hover:text-[#b6ff00] transition-colors">
@@ -65,7 +67,7 @@ export default function Navbar() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#b6ff00] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#b6ff00]"></span>
             </span>
-            <span>Available for Hire</span>
+            <span>Open to SDE Roles</span>
           </a>
         </div>
 
@@ -77,7 +79,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className={`text-xs font-semibold tracking-wider px-3.5 py-1.5 rounded-full transition-all duration-200 ${
+                className={`text-xs font-semibold tracking-wider px-3 py-1.5 rounded-full transition-all duration-200 ${
                   isActive
                     ? 'bg-[#b6ff00] text-[#111111] shadow-glow-lime font-black'
                     : 'text-slate-400 hover:text-white hover:bg-white/5'
@@ -97,14 +99,14 @@ export default function Navbar() {
             className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-slate-300 bg-[#1a1a1a] hover:bg-[#222222] border border-[#2f2f2f] rounded-full transition-all duration-200 hover:border-[#b6ff00]/50"
           >
             <FileDown size={14} className="text-[#b6ff00]" />
-            <span>CV</span>
+            <span>Resume</span>
           </a>
 
           <a
             href="#contact"
             className="flex items-center gap-1.5 px-5 py-2 text-xs font-black text-[#111111] bg-[#b6ff00] hover:bg-[#c6ff24] rounded-full transition-all duration-300 shadow-glow-lime hover:scale-[1.02]"
           >
-            <span>Get a Quote</span>
+            <span>Get in Touch</span>
             <ArrowUpRight size={14} />
           </a>
         </div>
@@ -124,7 +126,7 @@ export default function Navbar() {
         <div className="lg:hidden bg-[#141414]/98 backdrop-blur-2xl border-b border-[#252525] px-6 py-6 space-y-3.5 shadow-2xl animate-in fade-in slide-in-from-top-4 duration-200">
           <div className="flex items-center gap-2 pb-2 text-xs font-bold text-[#b6ff00]">
             <span className="w-2 h-2 rounded-full bg-[#b6ff00] animate-pulse"></span>
-            Available for Freelance Projects
+            Open for SDE Roles & Internships
           </div>
           {navLinks.map((link) => (
             <a
@@ -142,7 +144,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="flex items-center justify-center gap-2 w-full py-2.5 text-xs font-black text-[#111111] bg-[#b6ff00] rounded-full shadow-glow-lime"
             >
-              <span>Start a Project / Hire Me</span>
+              <span>Contact / Connect</span>
               <ArrowUpRight size={14} />
             </a>
             <a

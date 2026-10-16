@@ -22,7 +22,7 @@ export default function Faq() {
             Everything you need <span className="text-[#b6ff00]">to know.</span>
           </h2>
           <p className="text-slate-400 text-sm sm:text-base mt-2 font-normal">
-            Clear, straightforward answers about freelance contracts, communication, code ownership, and timelines.
+            Direct answers regarding role availability, academic timeline, stack strengths, team collaboration, and relocation.
           </p>
         </div>
 
@@ -69,8 +69,8 @@ export default function Faq() {
         {/* Bottom Callout */}
         <div className="mt-10 p-6 rounded-3xl bg-[#181818] border border-[#2b2b2b] flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left shadow-lg">
           <div>
-            <h4 className="text-sm font-bold text-white">Have a custom question not listed here?</h4>
-            <p className="text-xs text-slate-400 mt-0.5">I typically reply within a couple of hours on WhatsApp or Email.</p>
+            <h4 className="text-sm font-bold text-white">Have a specific question or want to schedule an interview?</h4>
+            <p className="text-xs text-slate-400 mt-0.5">I typically reply within a few hours on Email, LinkedIn, or WhatsApp.</p>
           </div>
           <a
             href={portfolioData.personal.whatsapp}

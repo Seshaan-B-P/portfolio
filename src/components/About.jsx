@@ -15,26 +15,26 @@ export default function About() {
     <section id="about" className="py-24 border-t border-[#222222] relative">
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Left Column: Heading & Work Ethics */}
+          {/* Left Column: Heading & Engineering Principles */}
           <div className="lg:col-span-5 space-y-5">
             <span className="text-xs font-bold text-[#b6ff00] uppercase tracking-widest flex items-center gap-1.5">
               <Sparkles size={14} />
-              04 — FREELANCER PRINCIPLES
+              04 — CANDIDATE PROFILE & PRINCIPLES
             </span>
             <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
-              Engineering with discipline.
+              Engineering with rigor.
               <br />
-              <span className="text-[#b6ff00]">Delivering with speed.</span>
+              <span className="text-[#b6ff00]">Driven by curiosity & impact.</span>
             </h2>
 
             <p className="text-sm sm:text-base text-slate-400 leading-relaxed font-normal pt-1">
-              I partner directly with founders, businesses, and engineering leads looking for an agile developer who takes genuine ownership. No corporate bureaucracy — just clean code, swift responses, and production excellence.
+              Master of Computer Applications (MCA) candidate at M. Kumarasamy College of Engineering (79%). Combining strong computer science fundamentals in algorithms, DBMS, and system architecture with practical hands-on experience leading 3-member engineering teams.
             </p>
 
             {/* Work Ethics Checklist Box */}
             <div className="p-7 rounded-3xl bg-[#181818] border border-[#262626] shadow-card-soft space-y-3.5 mt-4">
               <span className="text-xs font-bold text-white uppercase tracking-wider block">
-                My Freelance Guarantee to You:
+                Engineering Commitments:
               </span>
               <div className="space-y-3 pt-1">
                 {portfolioData.skills.workEthics.map((item, idx) => (
@@ -58,7 +58,7 @@ export default function About() {
 
             {/* 3D Interactive Stats Cards Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
-              {portfolioData.freelanceTrustMetrics.map((stat, idx) => (
+              {portfolioData.studentTrustMetrics.map((stat, idx) => (
                 <Tilt3DCard
                   key={idx}
                   maxTilt={14}
